@@ -666,6 +666,7 @@ function toast(msg){
 }
 
 function setPlaying(on){
+  if(raf){ cancelAnimationFrame(raf); raf = null; }
   playing = on;
   nowEl.classList.toggle("is-playing", on);
   $("playBtn").setAttribute("aria-label", on ? "일시정지" : "재생");
@@ -674,10 +675,10 @@ function setPlaying(on){
     : `<path d="M7.5 4.8 19 12 7.5 19.2V4.8Z"/>`;
   paintTime();
   if(on){ last = performance.now(); raf = requestAnimationFrame(tick); }
-  else if(raf){ cancelAnimationFrame(raf); raf = null; }
 }
 
 function tick(now){
+  if(!playing) return;
   elapsed += (now - last) / 1000 * SPEED;
   last = now;
   if(elapsed >= TRACKS[current].dur){ next(); return; }
