@@ -1,0 +1,789 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>MY CLASS PLAYLIST</title>
+<meta name="description" content="수업 나눔 플레이리스트 - 마음에 드는 트랙을 골라 나만의 플레이리스트를 만들어 보세요.">
+<meta name="theme-color" content="#06070B">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="CLASS PLAYLIST">
+<link rel="apple-touch-icon" href="data:image/png;base64,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">
+<link rel="icon" type="image/png" href="data:image/png;base64,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">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700;800;900&family=Gothic+A1:wght@400;500;700;800&display=swap">
+<style>
+  :root{
+    --ink:#06070B;
+    --panel:#0B0E16;
+    --panel-2:#11151F;
+    --line:rgba(255,255,255,.075);
+    --line-strong:rgba(255,255,255,.16);
+    --text:#EEF1FA;
+    --muted:#8B93AB;
+    --tag:#7D93C4;
+    --accent-a:#7C5CFF;
+    --accent-b:#37B6FF;
+    --hot:#FF4FA3;
+    --display:"Archivo","Segoe UI",system-ui,sans-serif;
+    --ko:"Gothic A1","Malgun Gothic","Apple SD Gothic Neo",system-ui,sans-serif;
+  }
+
+  *{box-sizing:border-box;}
+
+  body{
+    margin:0;
+    background:var(--ink);
+    color:var(--text);
+    font-family:var(--ko);
+    -webkit-font-smoothing:antialiased;
+  }
+
+  .stage{
+    min-height:100vh;
+    padding:28px 16px 36px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    background:
+      radial-gradient(760px 520px at 18% 8%, rgba(124,92,255,.20), transparent 62%),
+      radial-gradient(700px 560px at 86% 92%, rgba(55,182,255,.16), transparent 60%),
+      radial-gradient(520px 420px at 72% 12%, rgba(255,79,163,.10), transparent 62%),
+      var(--ink);
+  }
+
+  .phone{
+    width:100%;
+    max-width:400px;
+    height:min(860px, calc(100vh - 56px));
+    min-height:600px;
+    display:flex;
+    flex-direction:column;
+    position:relative;
+    overflow:hidden;
+    border-radius:42px;
+    border:7px solid #0D1019;
+    background:var(--panel);
+    box-shadow:
+      0 0 0 1px rgba(255,255,255,.06),
+      0 40px 90px -30px rgba(0,0,0,.9),
+      0 0 120px -40px rgba(124,92,255,.45);
+  }
+
+  /* ---------- header ---------- */
+  header{
+    padding:22px 20px 14px;
+    display:grid;
+    grid-template-columns:1fr auto auto;
+    align-items:center;
+    column-gap:10px;
+    row-gap:8px;
+    border-bottom:1px solid var(--line);
+  }
+
+  .wordmark{
+    grid-column:1;
+    margin:0;
+    font-family:var(--display);
+    font-weight:800;
+    font-size:clamp(19px, 5.9vw, 26px);
+    letter-spacing:-.015em;
+    line-height:1;
+    white-space:nowrap;
+  }
+
+  .sub{
+    grid-column:1 / -1;
+    margin:0;
+    font-size:12.5px;
+    font-weight:500;
+    color:var(--muted);
+    letter-spacing:-.01em;
+  }
+
+  .hbtn{
+    width:34px;height:34px;
+    display:grid;place-items:center;
+    border:0;border-radius:50%;
+    background:transparent;
+    color:var(--text);
+    cursor:pointer;
+    transition:background .18s, color .18s, transform .18s;
+  }
+  .hbtn:hover{background:rgba(255,255,255,.08);}
+  .hbtn[aria-pressed="true"]{color:var(--hot);}
+  .hbtn[aria-pressed="true"] svg{fill:var(--hot);}
+
+  /* ---------- track list ---------- */
+  .list{
+    flex:1;
+    overflow-y:auto;
+    overscroll-behavior:contain;
+    padding:4px 16px 8px;
+    scrollbar-width:thin;
+    scrollbar-color:rgba(255,255,255,.16) transparent;
+  }
+  .list::-webkit-scrollbar{width:6px;}
+  .list::-webkit-scrollbar-thumb{background:rgba(255,255,255,.16);border-radius:3px;}
+
+  .row{
+    position:relative;
+    display:grid;
+    grid-template-columns:58px minmax(0,1fr) auto auto;
+    align-items:center;
+    column-gap:11px;
+    padding:11px 6px 11px 4px;
+    border:0;
+    width:100%;
+    text-align:left;
+    background:transparent;
+    color:inherit;
+    font:inherit;
+    cursor:pointer;
+    border-radius:14px;
+    transition:background .2s;
+  }
+  .row + .row{box-shadow:0 -1px 0 var(--line);}
+  .row:hover{background:rgba(255,255,255,.035);}
+
+  .row.is-current{background:linear-gradient(90deg, rgba(124,92,255,.16), rgba(55,182,255,.05) 60%, transparent);}
+  .row.is-current::before{
+    content:"";
+    position:absolute;left:-4px;top:12px;bottom:12px;
+    width:3px;border-radius:3px;
+    background:linear-gradient(180deg,var(--accent-a),var(--accent-b));
+  }
+  .row.is-current .title{color:#fff;}
+
+  .art{
+    width:58px;height:58px;
+    border-radius:12px;
+    overflow:hidden;
+    display:block;
+    box-shadow:0 6px 16px -8px rgba(0,0,0,.9), inset 0 0 0 1px rgba(255,255,255,.08);
+  }
+  .art svg{display:block;width:100%;height:100%;}
+
+  .meta{min-width:0;}
+
+  .title{
+    display:flex;
+    align-items:baseline;
+    gap:8px;
+    font-weight:800;
+    font-size:15.5px;
+    letter-spacing:-.02em;
+    color:#E9EDF8;
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow:ellipsis;
+  }
+  .num{
+    font-family:var(--display);
+    font-weight:800;
+    font-size:16px;
+    font-variant-numeric:tabular-nums;
+    letter-spacing:-.01em;
+    color:#fff;
+    flex:none;
+  }
+  .name{overflow:hidden;text-overflow:ellipsis;}
+
+  .tags{
+    margin-top:5px;
+    font-size:11.5px;
+    font-weight:500;
+    color:var(--tag);
+    letter-spacing:-.01em;
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow:ellipsis;
+  }
+
+  .circ{
+    width:32px;height:32px;
+    flex:none;
+    display:grid;place-items:center;
+    border-radius:50%;
+    border:1.5px solid var(--line-strong);
+    background:rgba(255,255,255,.05);
+    color:#D9DEEC;
+    cursor:pointer;
+    transition:transform .16s, background .2s, border-color .2s, color .2s;
+  }
+  .circ:hover{background:rgba(255,255,255,.14);transform:scale(1.06);}
+  .circ:active{transform:scale(.94);}
+  .circ svg{width:15px;height:15px;fill:currentColor;}
+
+  .row.is-current .circ.play{
+    background:linear-gradient(135deg,var(--accent-a),var(--accent-b));
+    border-color:transparent;
+    color:#fff;
+  }
+
+  .circ.add.is-on{
+    background:linear-gradient(135deg,var(--accent-a),var(--accent-b));
+    border-color:transparent;
+    color:#fff;
+    animation:pop .34s ease;
+  }
+  @keyframes pop{
+    0%{transform:scale(.7);}
+    55%{transform:scale(1.18);}
+    100%{transform:scale(1);}
+  }
+
+  /* ---------- now playing strip ---------- */
+  .now{
+    display:grid;
+    grid-template-columns:auto minmax(0,1fr) auto;
+    align-items:center;
+    gap:11px;
+    padding:9px 18px 10px;
+    border-top:1px solid var(--line);
+    background:var(--panel-2);
+  }
+
+  .now-art{
+    width:34px;height:34px;border-radius:9px;overflow:hidden;flex:none;
+    box-shadow:inset 0 0 0 1px rgba(255,255,255,.1);
+  }
+  .now-art svg{display:block;width:100%;height:100%;}
+
+  .now-title{
+    font-size:12.5px;font-weight:700;letter-spacing:-.01em;
+    white-space:nowrap;overflow:hidden;text-overflow:ellipsis;
+  }
+  .now-state{
+    margin-top:3px;
+    font-family:var(--display);
+    font-size:10.5px;font-weight:600;
+    font-variant-numeric:tabular-nums;
+    color:var(--muted);
+    letter-spacing:.02em;
+  }
+
+  .eq{display:flex;align-items:flex-end;gap:2.5px;height:17px;}
+  .eq i{
+    width:3px;border-radius:2px;height:5px;
+    background:linear-gradient(180deg,var(--accent-b),var(--accent-a));
+    animation:bounce .9s ease-in-out infinite;
+    animation-play-state:paused;
+    opacity:.35;
+  }
+  .eq i:nth-child(2){animation-delay:.16s;}
+  .eq i:nth-child(3){animation-delay:.33s;}
+  .eq i:nth-child(4){animation-delay:.49s;}
+  .is-playing .eq i{animation-play-state:running;opacity:1;}
+  @keyframes bounce{
+    0%,100%{height:5px;}
+    50%{height:17px;}
+  }
+
+  .bar{
+    height:3px;border-radius:3px;
+    background:rgba(255,255,255,.1);
+    margin:0 18px;
+    overflow:hidden;
+  }
+  .bar span{
+    display:block;height:100%;width:0%;
+    border-radius:3px;
+    background:linear-gradient(90deg,var(--accent-a),var(--accent-b),var(--hot));
+  }
+
+  /* ---------- player ---------- */
+  .player{
+    display:grid;
+    grid-template-columns:repeat(5,1fr);
+    align-items:center;
+    justify-items:center;
+    padding:12px 14px 18px;
+    background:var(--panel-2);
+  }
+
+  .pbtn{
+    border:0;background:transparent;color:#E4E8F3;
+    width:46px;height:46px;
+    display:grid;place-items:center;
+    border-radius:50%;
+    cursor:pointer;
+    position:relative;
+    transition:color .18s, transform .16s, background .18s;
+  }
+  .pbtn:hover{background:rgba(255,255,255,.07);}
+  .pbtn:active{transform:scale(.92);}
+  .pbtn svg{width:22px;height:22px;fill:currentColor;}
+  .pbtn[aria-pressed="true"]{color:var(--accent-b);}
+
+  .big{
+    width:66px;height:66px;
+    border-radius:50%;
+    background:linear-gradient(140deg,var(--accent-a) 8%, #5B7CFF 45%, var(--accent-b) 92%);
+    color:#fff;
+    box-shadow:0 10px 28px -8px rgba(92,120,255,.75);
+  }
+  .big:hover{background:linear-gradient(140deg,#8B6EFF 8%, #6A88FF 45%, #4CC0FF 92%);}
+  .big svg{width:26px;height:26px;}
+
+  .count{
+    position:absolute;top:4px;right:2px;
+    min-width:17px;height:17px;padding:0 4px;
+    border-radius:9px;
+    background:var(--hot);
+    color:#fff;
+    font-family:var(--display);
+    font-size:10px;font-weight:800;
+    display:grid;place-items:center;
+    box-shadow:0 0 0 2.5px var(--panel-2);
+  }
+  .count[hidden]{display:none;}
+
+  /* ---------- drawer ---------- */
+  .drawer{
+    position:absolute;inset:auto 0 0 0;
+    max-height:76%;
+    display:flex;flex-direction:column;
+    background:#0E121C;
+    border-top:1px solid var(--line-strong);
+    border-radius:24px 24px 0 0;
+    box-shadow:0 -24px 60px -20px rgba(0,0,0,.95);
+    transform:translateY(101%);
+    transition:transform .34s cubic-bezier(.22,1,.36,1);
+    z-index:3;
+  }
+  .drawer.is-open{transform:translateY(0);}
+
+  .drawer-head{
+    display:flex;align-items:center;justify-content:space-between;gap:10px;
+    padding:16px 20px 12px;
+  }
+  .drawer-head h2{
+    margin:0;font-size:14.5px;font-weight:800;letter-spacing:-.02em;
+  }
+  .drawer-head h2 em{
+    font-family:var(--display);font-style:normal;font-weight:800;
+    color:var(--accent-b);font-variant-numeric:tabular-nums;
+  }
+
+  .textbtn{
+    border:0;background:transparent;
+    font-family:var(--ko);font-size:12px;font-weight:700;
+    color:var(--muted);cursor:pointer;padding:6px 8px;border-radius:8px;
+  }
+  .textbtn:hover{color:var(--text);background:rgba(255,255,255,.07);}
+
+  .picked{
+    list-style:none;margin:0;
+    padding:0 14px 18px;
+    overflow-y:auto;
+    display:flex;flex-direction:column;gap:2px;
+  }
+  .picked li{
+    display:grid;grid-template-columns:auto minmax(0,1fr) auto;
+    align-items:center;gap:11px;
+    padding:8px 6px;
+    border-radius:12px;
+  }
+  .picked li + li{box-shadow:0 -1px 0 var(--line);}
+  .pick-art{width:38px;height:38px;border-radius:9px;overflow:hidden;}
+  .pick-art svg{display:block;width:100%;height:100%;}
+  .pick-name{font-size:13.5px;font-weight:700;letter-spacing:-.02em;
+    white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+  .pick-tags{margin-top:3px;font-size:11px;color:var(--tag);font-weight:500;
+    white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+
+  .picked li.empty{
+    display:block;
+    padding:10px 20px 34px;
+    color:var(--muted);
+    font-size:12.5px;
+    line-height:1.7;
+    box-shadow:none;
+  }
+  .empty b{color:var(--text);font-weight:700;}
+
+  .scrim{
+    position:absolute;inset:0;
+    background:rgba(4,5,9,.62);
+    backdrop-filter:blur(2px);
+    opacity:0;pointer-events:none;
+    transition:opacity .3s;
+    z-index:2;
+  }
+  .scrim.is-open{opacity:1;pointer-events:auto;}
+
+  /* ---------- toast ---------- */
+  .toast{
+    position:absolute;left:50%;bottom:112px;
+    transform:translate(-50%,10px);
+    padding:9px 16px;
+    border-radius:999px;
+    background:rgba(20,24,36,.96);
+    box-shadow:0 0 0 1px var(--line-strong), 0 14px 30px -12px rgba(0,0,0,.9);
+    font-size:12.5px;font-weight:700;letter-spacing:-.01em;
+    white-space:nowrap;
+    opacity:0;pointer-events:none;
+    transition:opacity .24s, transform .24s;
+    z-index:4;
+  }
+  .toast.is-on{opacity:1;transform:translate(-50%,0);}
+
+  :focus-visible{outline:2px solid var(--accent-b);outline-offset:3px;border-radius:10px;}
+
+  @media (prefers-reduced-motion: reduce){
+    *{animation-duration:.001ms !important;transition-duration:.001ms !important;}
+  }
+
+  @media (max-width:430px){
+    .stage{padding:0;}
+    .phone{max-width:none;height:100vh;min-height:0;border:0;border-radius:0;box-shadow:none;}
+  }
+</style>
+
+<style>
+  html,body{height:100%;overscroll-behavior:none;-webkit-text-size-adjust:100%;}
+  body{-webkit-tap-highlight-color:transparent;}
+  button,[role="button"]{touch-action:manipulation;}
+  .list{-webkit-overflow-scrolling:touch;}
+
+  /* 아이폰: 화면 꽉 채우고 노치/홈바 영역 피하기 */
+  @media (max-width:430px){
+    .phone{height:100vh;height:100dvh;}
+    header{padding-top:calc(20px + env(safe-area-inset-top));}
+    .player{padding-bottom:calc(18px + env(safe-area-inset-bottom));}
+    .drawer{padding-bottom:env(safe-area-inset-bottom);}
+    .toast{bottom:calc(112px + env(safe-area-inset-bottom));}
+  }
+
+  /* 홈 화면에서 앱처럼 실행됐을 때 */
+  body.standalone .stage{padding:0;}
+  body.standalone .phone{
+    max-width:none;height:100vh;height:100dvh;min-height:0;
+    border:0;border-radius:0;box-shadow:none;
+  }
+  body.standalone header{padding-top:calc(20px + env(safe-area-inset-top));}
+  body.standalone .player{padding-bottom:calc(18px + env(safe-area-inset-bottom));}
+  body.standalone .toast{bottom:calc(112px + env(safe-area-inset-bottom));}
+</style>
+</head>
+<body>
+<div class="stage">
+  <div class="phone" id="phone">
+
+    <header>
+      <h1 class="wordmark">MY CLASS PLAYLIST</h1>
+      <button class="hbtn" id="favBtn" type="button" aria-pressed="false" aria-label="이 플레이리스트 찜하기">
+        <svg viewBox="0 0 24 24" width="21" height="21" fill="none" stroke="currentColor" stroke-width="1.8">
+          <path d="M12 20.2 4.6 13a4.6 4.6 0 1 1 6.5-6.5l.9.9.9-.9A4.6 4.6 0 1 1 19.4 13Z" stroke-linejoin="round"/>
+        </svg>
+      </button>
+      <button class="hbtn" id="menuBtn" type="button" aria-label="담은 트랙 보기">
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+          <circle cx="12" cy="5" r="1.8"/><circle cx="12" cy="12" r="1.8"/><circle cx="12" cy="19" r="1.8"/>
+        </svg>
+      </button>
+      <p class="sub">마음에 드는 TRACK을 골라 나만의 PLAYLIST를 만들어 보세요!</p>
+    </header>
+
+    <div class="list" id="list"></div>
+
+    <div class="now" id="now">
+      <div class="now-art" id="nowArt"></div>
+      <div>
+        <div class="now-title" id="nowTitle"></div>
+        <div class="now-state" id="nowState">READY · 0:00</div>
+      </div>
+      <div class="eq" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+    </div>
+    <div class="bar"><span id="prog"></span></div>
+
+    <nav class="player" aria-label="재생 컨트롤">
+      <button class="pbtn" id="shuffleBtn" type="button" aria-pressed="false" aria-label="셔플">
+        <svg viewBox="0 0 24 24"><path d="M17 3.5 22 7l-5 3.5V8h-2.1c-1 0-1.7.4-2.4 1.3L11 11.2l-1.3-1.7 1.2-1.6C11.9 6.4 13.2 6 14.9 6H17V3.5ZM2 6h3.1c1.7 0 3 .4 4 1.9l5 6.8c.7.9 1.4 1.3 2.4 1.3H19V13.5L24 17l-5 3.5V18h-2.5c-1.7 0-3-.4-4-1.9l-5-6.8C6.8 8.4 6.1 8 5.1 8H2V6Zm0 10h3.1c1 0 1.7-.4 2.4-1.3l1.2-1.6L10 14.8l-1.4 1.9C7.6 17.6 6.3 18 4.6 18H2v-2Z"/></svg>
+      </button>
+      <button class="pbtn" id="prevBtn" type="button" aria-label="이전 트랙">
+        <svg viewBox="0 0 24 24"><path d="M7 5h2.4v14H7V5Zm11 .6v12.8L9.8 12 18 5.6Z"/></svg>
+      </button>
+      <button class="pbtn big" id="playBtn" type="button" aria-label="재생">
+        <svg viewBox="0 0 24 24" id="playIcon"><path d="M7.5 4.8 19 12 7.5 19.2V4.8Z"/></svg>
+      </button>
+      <button class="pbtn" id="nextBtn" type="button" aria-label="다음 트랙">
+        <svg viewBox="0 0 24 24"><path d="M14.6 5H17v14h-2.4V5ZM6 5.6 14.2 12 6 18.4V5.6Z"/></svg>
+      </button>
+      <button class="pbtn" id="queueBtn" type="button" aria-label="담은 트랙 열기">
+        <svg viewBox="0 0 24 24"><path d="M3 6h13v2H3V6Zm0 5h13v2H3v-2Zm0 5h9v2H3v-2Zm16.2-6.6 1.5 1.5-4.6 4.6-2.6-2.6 1.5-1.5 1.1 1.1 3.1-3.1Z"/></svg>
+        <span class="count" id="count" hidden>0</span>
+      </button>
+    </nav>
+
+    <div class="scrim" id="scrim"></div>
+
+    <section class="drawer" id="drawer" aria-label="내가 담은 트랙">
+      <div class="drawer-head">
+        <h2>담은 트랙 <em id="pickCount">0</em>개</h2>
+        <button class="textbtn" id="clearBtn" type="button">모두 지우기</button>
+        <button class="textbtn" id="closeBtn" type="button">닫기</button>
+      </div>
+      <ul class="picked" id="picked"></ul>
+    </section>
+
+    <div class="toast" id="toast"></div>
+  </div>
+</div>
+
+<script>
+const ART = {
+  ai: `<svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="g1" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#2D6BF0"/><stop offset="1" stop-color="#1E4FD1"/></linearGradient></defs><rect width="64" height="64" fill="url(#g1)"/><text x="7" y="26" font-family="Archivo, sans-serif" font-size="21" font-weight="800" fill="#fff">AI</text><rect x="36" y="8" width="15" height="15" rx="4.5" fill="none" stroke="#fff" stroke-width="1.6"/><path d="M43.5 12.5v6.2M40.4 15.6h6.2" stroke="#fff" stroke-width="1.6" stroke-linecap="round"/><rect x="7" y="36" width="19" height="15" rx="3" fill="none" stroke="#BFD6FF" stroke-width="1.6"/><path d="M11 47.5 22 40" stroke="#BFD6FF" stroke-width="1.6" stroke-linecap="round"/><path d="M42 30.5v3.5" stroke="#CFE0FF" stroke-width="1.6" stroke-linecap="round"/><circle cx="42" cy="29" r="1.8" fill="#CFE0FF"/><rect x="32" y="34" width="21" height="17" rx="6" fill="#E8F1FF"/><circle cx="38.5" cy="42" r="2.4" fill="#2D6BF0"/><circle cx="46.5" cy="42" r="2.4" fill="#2D6BF0"/><path d="M38 47.5h9" stroke="#2D6BF0" stroke-width="1.5" stroke-linecap="round"/><path d="M30 38h-2.5a2 2 0 0 0-2 2v3a2 2 0 0 0 2 2H30M55 38h2.5a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2H55" fill="none" stroke="#E8F1FF" stroke-width="1.6"/></svg>`,
+
+  heart: `<svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="g2" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#FBD9E4"/><stop offset="1" stop-color="#F7AFC8"/></linearGradient></defs><rect width="64" height="64" fill="url(#g2)"/><path d="M17 7.5c3.3-3 8.3-2.6 11.2.7.5.6.9 1.2 1.2 1.9.3-.7.7-1.3 1.2-1.9 2.9-3.3 7.9-3.7 11.2-.7 3.6 3.3 3.8 8.9.4 12.4L29.4 32 16.6 19.9c-3.4-3.5-3.2-9.1.4-12.4Z" fill="#F2506E"/><path d="M14 64c0-9.4 4.6-15.5 11.5-15.5S37 54.6 37 64Z" fill="#3F9BA8"/><circle cx="25.5" cy="42" r="7.5" fill="#F6C9A8"/><path d="M18.6 38c0-4.6 3-7.4 7-7.4s7 2.6 7 7.1c-1.9-.6-3-2-3.4-3.6-1.8 2.4-5.6 3.7-10.6 3.9Z" fill="#4A3B37"/><path d="M31 64c0-10 5-16.5 12.3-16.5S55.6 54 55.6 64Z" fill="#E4694F"/><circle cx="43.3" cy="40.5" r="8" fill="#F9D8BC"/><path d="M35.6 37c.6-5.3 3.6-8.2 7.9-8.2 4.6 0 7.7 3.1 7.9 8.6-1.4-1.3-2.2-2.9-2.5-4.6-2.3 2.6-7.1 4-13.3 4.2Z" fill="#3A2E2B"/></svg>`,
+
+  growth: `<svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="g3" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#B6ECC2"/><stop offset="1" stop-color="#63C98C"/></linearGradient></defs><rect width="64" height="64" fill="url(#g3)"/><path d="M12 9.5 13.2 13l3.5 1.2-3.5 1.2L12 19l-1.2-3.6L7.3 14.2l3.5-1.2L12 9.5Z" fill="#F5FFF8" opacity=".85"/><path d="M53 14l.9 2.6 2.6.9-2.6.9-.9 2.6-.9-2.6-2.6-.9 2.6-.9L53 14Z" fill="#F5FFF8" opacity=".7"/><path d="M8 64c0-11.5 4.8-18.5 12.5-18.5S33 52.5 33 64Z" fill="#2B3A56"/><path d="M20.5 45.5c2.2 0 4.2.6 5.8 1.7l-5.8 7.3-5.8-7.3c1.6-1.1 3.6-1.7 5.8-1.7Z" fill="#F2F5FB"/><circle cx="20.5" cy="37.5" r="7.6" fill="#F6C9A8"/><path d="M13 34c.4-5 3.3-7.8 7.5-7.8s7.1 2.8 7.5 7.8c-2-.5-3.4-1.6-4.2-3-2.3 1.9-6 2.9-10.8 3Z" fill="#3C2F2B"/><path d="M31 64c0-11.5 4.8-18.5 12.5-18.5S56 52.5 56 64Z" fill="#3B4C6B"/><path d="M43.5 45.5c2.2 0 4.2.6 5.8 1.7l-5.8 7.3-5.8-7.3c1.6-1.1 3.6-1.7 5.8-1.7Z" fill="#F2F5FB"/><circle cx="43.5" cy="37.5" r="7.6" fill="#F9D8BC"/><path d="M36 34c.4-5 3.3-7.8 7.5-7.8s7.1 2.8 7.5 7.8c-2-.5-3.4-1.6-4.2-3-2.3 1.9-6 2.9-10.8 3Z" fill="#52402F"/></svg>`,
+
+  book: `<svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="g4" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#FCD46B"/><stop offset="1" stop-color="#F1A82A"/></linearGradient></defs><rect width="64" height="64" fill="url(#g4)"/><g stroke="#FFF6DA" stroke-width="1.7" stroke-linecap="round"><path d="M44 9v7M40.5 12.5h7M52 22v4M50 24h4M15 13v4M13 15h4"/></g><path d="M39.5 20.5c0-4.1-3.3-7.4-7.4-7.4s-7.4 3.3-7.4 7.4c0 2.8 1.5 5 3.2 6.4.8.7 1.2 1.4 1.2 2.3h6c0-.9.4-1.6 1.2-2.3 1.7-1.4 3.2-3.6 3.2-6.4Z" fill="#FFF6DA"/><path d="M29.3 31.5h5.8" stroke="#E29B1F" stroke-width="1.6" stroke-linecap="round"/><path d="M18 63c0-10 5-16.5 12.6-16.5 4.3 0 7.6 2 9.6 5.3" fill="#2FA9C4"/><circle cx="28" cy="38.5" r="7.2" fill="#F6C9A8"/><path d="M21 35.5c.4-4.8 3.1-7.4 7-7.4s6.7 2.6 7 7.4c-1.8-.5-3.1-1.5-3.9-2.8-2.1 1.8-5.5 2.7-10.1 2.8Z" fill="#3C2F2B"/><path d="M24 63c0-5 3.5-8 8-8h20c2 0 3.5 1.4 3.5 3.4V63Z" fill="#F7FAFF"/><path d="M32 55c-4.5 0-8 3-8 8 0-4 2.5-6.2 6-6.2h22c1 0 1.5-.6 1.5-1.8Z" fill="#DCE6F5"/><path d="M34 51.5h16M34 47.5h13" stroke="#F7FAFF" stroke-width="1.8" stroke-linecap="round" opacity=".9"/></svg>`,
+
+  puzzle: `<svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="g5" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#CFE4FF"/><stop offset="1" stop-color="#8FB8F0"/></linearGradient></defs><rect width="64" height="64" fill="url(#g5)"/><g stroke="#F2F8FF" stroke-width="1.6" stroke-linecap="round"><path d="M50 10v6M47 13h6M13 46v5M10.5 48.5h5"/></g><path d="M10 13h13.5v6.5a3.2 3.2 0 1 1 6.5 0V26H10Z" fill="#3F76D8"/><path d="M34 13h20v13H40.5a3.2 3.2 0 1 0-6.5 0Z" fill="#8B5CF6"/><path d="M10 30h13.5v6.5a3.2 3.2 0 1 0 6.5 0V30H30v21H10Z" fill="#F2B23C"/><path d="M34 30h20v21H34V40.5a3.2 3.2 0 1 1-3.2-3.2H34Z" fill="#3FAE79"/><path d="M30 30v21" stroke="#CFE4FF" stroke-width="1.4"/><path d="M10 26h44" stroke="#CFE4FF" stroke-width="1.4"/></svg>`,
+
+  mic: `<svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="g6" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#9B6BFF"/><stop offset="1" stop-color="#7A3FE0"/></linearGradient><linearGradient id="g6b" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#F3F6FF"/><stop offset="1" stop-color="#9AA7C4"/></linearGradient></defs><rect width="64" height="64" fill="url(#g6)"/><g stroke="#EADCFF" stroke-width="1.7" stroke-linecap="round"><path d="M14 12v6M11 15h6M50 40v5M47.5 42.5h5M49 13v4M47 15h4"/></g><rect x="24" y="9" width="16" height="30" rx="8" fill="url(#g6b)"/><g stroke="#7A3FE0" stroke-width="1.3" opacity=".55"><path d="M26.5 16h11M26.5 21h11M26.5 26h11M26.5 31h11"/></g><path d="M19 30a13 13 0 0 0 26 0" fill="none" stroke="#F3F6FF" stroke-width="2.6" stroke-linecap="round"/><path d="M32 43v10" stroke="#F3F6FF" stroke-width="2.6" stroke-linecap="round"/><path d="M24 56h16" stroke="#F3F6FF" stroke-width="2.6" stroke-linecap="round"/></svg>`
+};
+
+const TRACKS = [
+  { n:"01", name:"AI·디지털 수업",     tags:"#AI활용 #디지털교육 #미래수업",            art:ART.ai,     dur:214 },
+  { n:"02", name:"인성·사회정서 수업", tags:"#사회정서 #공감 #회복적생활교육",          art:ART.heart,  dur:198 },
+  { n:"03", name:"학생역량 수업",      tags:"#질문탐구 #프로젝트 #학생성장",            art:ART.growth, dur:226 },
+  { n:"04", name:"교과지도 수업",      tags:"#국어 #수학 #과학 #체육 #예술 #외국어",     art:ART.book,   dur:241 },
+  { n:"05", name:"교육과정",           tags:"#교육과정설계 #IB #독서교육",              art:ART.puzzle, dur:187 },
+  { n:"06", name:"전문가 연수",        tags:"#전문가강연 #실습워크숍 #정책이해",         art:ART.mic,    dur:232 }
+];
+
+const SPEED = 5;           // 데모용 재생 배속
+const KEY = "class-playlist-picks";
+
+const $ = id => document.getElementById(id);
+const listEl = $("list"), nowEl = $("now"), phone = $("phone");
+
+let current = 0, playing = false, shuffle = false, elapsed = 0, raf = null, last = 0;
+let picks = new Set(load());
+
+function load(){
+  try{
+    const raw = localStorage.getItem(KEY);
+    return raw ? JSON.parse(raw) : [];
+  }catch{ return []; }
+}
+function save(){
+  try{ localStorage.setItem(KEY, JSON.stringify([...picks])); }catch{}
+}
+
+const time = s => `${Math.floor(s/60)}:${String(Math.floor(s%60)).padStart(2,"0")}`;
+
+function buildList(){
+  listEl.innerHTML = "";
+  TRACKS.forEach((t,i) => {
+    const row = document.createElement("div");
+    row.className = "row";
+    row.dataset.i = i;
+    row.innerHTML = `
+      <span class="art">${t.art}</span>
+      <span class="meta">
+        <span class="title"><span class="num">${t.n}</span><span class="name">${t.name}</span></span>
+        <span class="tags">${t.tags}</span>
+      </span>
+      <span class="circ play" role="button" tabindex="0" data-act="play" aria-label="${t.name} 재생">
+        <svg viewBox="0 0 24 24"><path d="M8 5.2 18.5 12 8 18.8V5.2Z"/></svg>
+      </span>
+      <span class="circ add" role="button" tabindex="0" data-act="add" aria-label="${t.name} 담기" aria-pressed="false">
+        <svg viewBox="0 0 24 24"><path d="M11 4h2v7h7v2h-7v7h-2v-7H4v-2h7V4Z"/></svg>
+      </span>`;
+    listEl.appendChild(row);
+  });
+  paintPicks();
+  paintCurrent();
+}
+
+function paintCurrent(){
+  [...listEl.children].forEach((row,i) => row.classList.toggle("is-current", i === current));
+  const t = TRACKS[current];
+  $("nowArt").innerHTML = t.art;
+  $("nowTitle").textContent = `${t.n}  ${t.name}`;
+  paintTime();
+}
+
+function paintTime(){
+  const t = TRACKS[current];
+  $("nowState").textContent = `${playing ? "NOW PLAYING" : "READY"} · ${time(elapsed)} / ${time(t.dur)}`;
+  $("prog").style.width = `${(elapsed / t.dur) * 100}%`;
+}
+
+function paintPicks(){
+  [...listEl.children].forEach((row,i) => {
+    const btn = row.querySelector(".add");
+    const on = picks.has(i);
+    btn.classList.toggle("is-on", on);
+    btn.setAttribute("aria-pressed", String(on));
+    btn.innerHTML = on
+      ? `<svg viewBox="0 0 24 24"><path d="M9.6 16.2 5.4 12l-1.4 1.4 5.6 5.6L20.4 7.8 19 6.4 9.6 16.2Z"/></svg>`
+      : `<svg viewBox="0 0 24 24"><path d="M11 4h2v7h7v2h-7v7h-2v-7H4v-2h7V4Z"/></svg>`;
+  });
+
+  const n = picks.size;
+  $("count").hidden = n === 0;
+  $("count").textContent = n;
+  $("pickCount").textContent = n;
+
+  const ul = $("picked");
+  ul.innerHTML = "";
+  if(n === 0){
+    ul.innerHTML = `<li class="empty">아직 담은 트랙이 없어요.<br>목록에서 <b>+</b> 를 눌러 마음에 드는 수업을 담아 보세요.</li>`;
+    return;
+  }
+  [...picks].sort((a,b)=>a-b).forEach(i => {
+    const t = TRACKS[i];
+    const li = document.createElement("li");
+    li.innerHTML = `
+      <span class="pick-art">${t.art}</span>
+      <span>
+        <span class="pick-name">${t.n}  ${t.name}</span>
+        <span class="pick-tags">${t.tags}</span>
+      </span>
+      <button class="circ" type="button" data-remove="${i}" aria-label="${t.name} 빼기">
+        <svg viewBox="0 0 24 24"><path d="M5 11h14v2H5z"/></svg>
+      </button>`;
+    ul.appendChild(li);
+  });
+}
+
+function toast(msg){
+  const el = $("toast");
+  el.textContent = msg;
+  el.classList.add("is-on");
+  clearTimeout(toast.t);
+  toast.t = setTimeout(() => el.classList.remove("is-on"), 1500);
+}
+
+function setPlaying(on){
+  playing = on;
+  nowEl.classList.toggle("is-playing", on);
+  $("playBtn").setAttribute("aria-label", on ? "일시정지" : "재생");
+  $("playIcon").innerHTML = on
+    ? `<path d="M7 5h3.4v14H7V5Zm6.6 0H17v14h-3.4V5Z"/>`
+    : `<path d="M7.5 4.8 19 12 7.5 19.2V4.8Z"/>`;
+  paintTime();
+  if(on){ last = performance.now(); raf = requestAnimationFrame(tick); }
+  else if(raf){ cancelAnimationFrame(raf); raf = null; }
+}
+
+function tick(now){
+  elapsed += (now - last) / 1000 * SPEED;
+  last = now;
+  if(elapsed >= TRACKS[current].dur){ next(); return; }
+  paintTime();
+  raf = requestAnimationFrame(tick);
+}
+
+function go(i, autoplay = true){
+  current = (i + TRACKS.length) % TRACKS.length;
+  elapsed = 0;
+  paintCurrent();
+  if(autoplay) setPlaying(true); else paintTime();
+}
+
+const next = () => go(shuffle ? randomOther() : current + 1);
+const prev = () => go(elapsed > 6 ? current : current - 1);
+
+function randomOther(){
+  if(TRACKS.length < 2) return current;
+  let i;
+  do { i = Math.floor(Math.random() * TRACKS.length); } while(i === current);
+  return i;
+}
+
+function toggleDrawer(open){
+  $("drawer").classList.toggle("is-open", open);
+  $("scrim").classList.toggle("is-open", open);
+}
+
+/* ---------- events ---------- */
+listEl.addEventListener("click", e => {
+  const row = e.target.closest(".row");
+  if(!row) return;
+  const i = +row.dataset.i;
+  const act = e.target.closest("[data-act]")?.dataset.act;
+
+  if(act === "add"){
+    picks.has(i) ? picks.delete(i) : picks.add(i);
+    save();
+    paintPicks();
+    toast(picks.has(i) ? `${TRACKS[i].name} 담았어요` : `${TRACKS[i].name} 뺐어요`);
+    return;
+  }
+  if(act === "play" && i === current && playing){ setPlaying(false); return; }
+  go(i);
+});
+
+listEl.addEventListener("keydown", e => {
+  if(e.key !== "Enter" && e.key !== " ") return;
+  const hit = e.target.closest("[data-act]");
+  if(!hit) return;
+  e.preventDefault();
+  hit.click();
+});
+
+$("picked").addEventListener("click", e => {
+  const btn = e.target.closest("[data-remove]");
+  if(!btn) return;
+  picks.delete(+btn.dataset.remove);
+  save();
+  paintPicks();
+});
+
+$("playBtn").addEventListener("click", () => setPlaying(!playing));
+$("nextBtn").addEventListener("click", next);
+$("prevBtn").addEventListener("click", prev);
+
+$("shuffleBtn").addEventListener("click", e => {
+  shuffle = !shuffle;
+  e.currentTarget.setAttribute("aria-pressed", String(shuffle));
+  toast(shuffle ? "셔플 켜짐" : "셔플 꺼짐");
+});
+
+$("favBtn").addEventListener("click", e => {
+  const on = e.currentTarget.getAttribute("aria-pressed") !== "true";
+  e.currentTarget.setAttribute("aria-pressed", String(on));
+  toast(on ? "플레이리스트를 찜했어요" : "찜을 해제했어요");
+});
+
+$("queueBtn").addEventListener("click", () => toggleDrawer(true));
+$("menuBtn").addEventListener("click", () => toggleDrawer(true));
+$("closeBtn").addEventListener("click", () => toggleDrawer(false));
+$("scrim").addEventListener("click", () => toggleDrawer(false));
+
+$("clearBtn").addEventListener("click", () => {
+  picks.clear();
+  save();
+  paintPicks();
+  toast("담은 트랙을 모두 지웠어요");
+});
+
+document.addEventListener("keydown", e => {
+  if(e.target.closest("button, [role=button]") && e.key === " ") return;
+  if(e.key === " "){ e.preventDefault(); setPlaying(!playing); }
+  if(e.key === "ArrowRight") next();
+  if(e.key === "ArrowLeft") prev();
+  if(e.key === "Escape") toggleDrawer(false);
+});
+
+buildList();
+paintTime();
+</script>
+
+<script>
+  if(window.navigator.standalone || matchMedia("(display-mode: standalone)").matches){
+    document.body.classList.add("standalone");
+  }
+</script>
+</body>
+</html>
